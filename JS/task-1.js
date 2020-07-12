@@ -1,14 +1,17 @@
 "use strict";
 
-let array = [];
+let array = [];  
 let message;
 let valueOfElement;
 
 const logItems = function (array) {
+
+  // с масива пытаюсь вытянуть елементы и внести в переменную valueOfElement
   for (const element of array) {
     valueOfElement = element;
   }
 
+  // перебираю масив и получаю необходимое сообщение
   for (let i = 1; i < array.length; i += 1) {
     message = `${i} - ${valueOfElement}`;
   }
