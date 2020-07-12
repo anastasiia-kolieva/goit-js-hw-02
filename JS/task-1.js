@@ -16,10 +16,11 @@ const logItems = function (array) {
     message = `${i} - ${valueOfElement}`;
   }
 
-  return;
+  return message;
 };
 
 console.log(message);
+// в девтулзах показывает underfined и проблема в строке 22.
 
 logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
