@@ -8,11 +8,10 @@ const findLongestWord = function (string) {
   listOfWords = string.split(" ");
 
   for (const oneWord of listOfWords) {
-
-
-    // if (index-1 === oneWord.length) {
-    //   console.log(oneWord);
-    // }
+    // если индекс последнего символа слова равен длинне слова тогда вывести это слово?????
+    if (oneWord.lastIndexOf() - 1 === oneWord.length) {
+      console.log(oneWord);
+    }
   }
   return;
 };
