@@ -15,9 +15,13 @@ const findLongestWord = function (string) {
     console.log(lengthOfWord);
 }
 
-  for (let i=1; i<lengthOfWord; i+=1){
-    console.log(word[i]);
-  }
+// if(lengthOfWord>word.length(i+1)){
+//   console.log(i);
+// }
+
+  // for (let i=1; i<lengthOfWord; i+=1){
+  //   console.log(word[i]);
+  // }
   // Запуталась!!
 
 
