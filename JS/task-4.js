@@ -1,7 +1,6 @@
 "use strict";
 
 let lengthOfString;
-let arr = [];
 let partOfString;
 let message;
 
