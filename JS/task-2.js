@@ -1,48 +1,32 @@
 "use strict";
 
-let wordOfEngraving;
+let wordsOfEngraving = [];
 let amountOfWord;
 let total;
 
 const calculateEngravingPrice = function (message, pricePerWord) {
-  // разбила масив по пробелам, создался новый масив wordOfEngraving
-  wordOfEngraving = message.split(" ");
+  wordsOfEngraving = message.split(" ");
+  amountOfWord = wordsOfEngraving.length;
 
-  //   перебираю масив чтоб узнать количество слов???????
-  for (let i = 1; i < wordOfEngraving.length; i += 1) {
-    amountOfWord += i;
-    console.log(amountOfWord);
-    break;
-  }
-
-  // сумма заказа=количество слов*цена за гравировку одного слова(pricePerWord)
   total = amountOfWord * pricePerWord;
-  console.log(total);
+  console.log("Стоимость гравировки", total);
 
-  return total;
+  return;
 };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-console.log(
-  calculateEngravingPrice(
-    "Proin sociis natoque et magnis parturient montes mus",
-    10
-  )
+calculateEngravingPrice(
+  "Proin sociis natoque et magnis parturient montes mus",
+  10
 ); // 80
 
-console.log(
-  calculateEngravingPrice(
-    "Proin sociis natoque et magnis parturient montes mus",
-    20
-  )
+calculateEngravingPrice(
+  "Proin sociis natoque et magnis parturient montes mus",
+  20
 ); // 160
 
-console.log(
-  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
-); // 240
+calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40); // 240
 
-console.log(
-  calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20)
-); // 120
+calculateEngravingPrice("Donec orci lectus aliquam est magnis", 20); // 120
