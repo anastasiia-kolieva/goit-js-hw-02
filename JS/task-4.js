@@ -13,7 +13,7 @@ const formatString = function (string) {
   }
   if (lengthOfString > 40) {
     let partOfString = string.slice(0, 41);
-    console.log(partOfString);
+    console.log(`${partOfString}...`);
   }
   return;
 };
