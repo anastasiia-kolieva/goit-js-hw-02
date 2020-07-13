@@ -1,25 +1,28 @@
 "use strict";
 
-let listOfWords;
+let list;
 let lengthOfWord;
 let longestWord;
 
 const findLongestWord = function (string) {
   // разбила строку по пробелам на слова. в результате получила масив listOfWords
-  listOfWords = string.split(" ");
-  // longestWord = listOfWords[0];
+  list = string.split(" ");
 
-  for (const word of listOfWords) {
+  for (const word of list) {
     lengthOfWord = word.length;
-    console.log(lengthOfWord);
   }
 
-  // for (let i = 0; i < string.length; i += 1) {
-  //   if (lengthOfWord <= lengthOfWord[i]) {
-  //     lengthOfWord = lengthOfWord[i];
-  //     console.log(word[i]);
-  //   }
-  // }
+  for (let i=0; i<list.length; i+=1){
+    longestWord=list[0];
+    // в начале перебора цикла самое длинное слово, это первое слово
+
+    if (   ) {
+      // условие не могу адекватно выразить
+    longestWord=list[i];
+    break;
+    }
+    console.log(longestWord);
+  }
 
   return;
 };
