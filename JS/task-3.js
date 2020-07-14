@@ -11,9 +11,9 @@ const findLongestWord = function (string) {
   for (const word of list) {
     lengthOfWord = word.length;
   }
+  longestWord = list[0];
 
   for (let i = 0; i < list.length; i += 1) {
-    longestWord = list[0];
     // в начале перебора цикла самое длинное слово, это первое слово
 
     // если длина елемента масива меньше чем длина СЛЕДУЮЩЕНО елемента этого же масива
