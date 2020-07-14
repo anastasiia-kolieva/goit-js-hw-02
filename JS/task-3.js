@@ -12,16 +12,17 @@ const findLongestWord = function (string) {
     lengthOfWord = word.length;
   }
 
-  for (let i=0; i<list.length; i+=1){
-    longestWord=list[0];
+  for (let i = 0; i < list.length; i += 1) {
+    longestWord = list[0];
     // в начале перебора цикла самое длинное слово, это первое слово
 
     // если длина елемента масива меньше чем длина СЛЕДУЮЩЕНО елемента этого же масива
-    if (lengthOfWord< lengthOfWord[i]) {
-      // условие не могу адекватно выразить??????
-    longestWord=list[i];
-    break;
+    if (lengthOfWord < lengthOfWord[i]) {
+      longestWord = list[i];
+      break;
     }
+
+    // в console выводится 9 штук первого слова. я так понимаю что условие IF не срабатывает.
     console.log(longestWord);
   }
 
